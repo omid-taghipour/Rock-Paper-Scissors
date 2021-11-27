@@ -1,0 +1,183 @@
+    #body1 {
+        background-image: url(files/bgimg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 8%;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 70px;
+        align-content: right;
+        overflow: hidden;
+    }
+    
+    .dl {
+        margin-left: 30%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #welcome {
+        text-align: center;
+        font-size: xxx-large;
+        color: white;
+    }
+    
+    .startmes {
+        color: rgb(182, 248, 174);
+        text-shadow: chartreuse;
+        text-align: center;
+        font-style: oblique;
+        font-size: 30px;
+    }
+    
+    .startbutton {
+        padding: 0.3em 1.2em;
+        margin: 0 0em 0em 0;
+        border-radius: 2em;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        background-color: #4eb5f1;
+        text-align: center;
+        transition: all 0.2s;
+        font-size: 30px;
+        border-color: unset;
+        align-items: center;
+    }
+    
+    .startbutton:hover {
+        background-color: #18e2a5;
+    }
+    
+    #stbdiv {
+        align-items: center;
+        text-align: center;
+    }
+    
+    input[type=text] {
+        background-color: white;
+        color: rgb(56, 16, 16);
+        width: 100mm;
+        border: 1px solid;
+        border-radius: 100px;
+        border-color: rgb(17, 57, 143);
+        margin: 1.5em;
+        padding: 15px 22px;
+        text-align: center;
+        font-size: 29px;
+        font-style: normal;
+    }
+    
+    input[type=text]:focus {
+        box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 4px -3px 30px #d39e50, -3px 3px 30px #fff389b9;
+    }
+    
+     ::placeholder {
+        color: rgba(87, 117, 66, 0.548);
+    }
+    
+    #result {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .usn {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: aliceblue;
+        text-align: center;
+    }
+    
+    #msg {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        text-align: center;
+        color: aliceblue;
+    }
+    
+    .score {
+        text-align: center;
+        padding: 10px;
+        color: antiquewhite;
+        font-size: 20px;
+    }
+    
+    #res {
+        border: 7px solid rgb(255, 155, 155);
+        border-radius: 3px;
+    }
+    
+    #schema {
+        padding-top: 5%;
+    }
+    
+    input[type="image"] {
+        position: relative;
+    }
+    
+    input[type="image"]:hover {
+        background-color: rgba(199, 243, 97, 0.267);
+    }
+    
+    #resultmesg {
+        padding: 5%;
+        font-size: xx-large;
+    }
+    /* #winms {
+        vertical-align: middle;
+        color: blanchedalmond;
+    } */
+    
+    #winms {
+        text-transform: uppercase;
+        font-weight: 900;
+        overflow: hidden;
+        line-height: 0.75;
+        color: #860000;
+    }
+    
+    #winms:hover {
+        color: #ffd988;
+    }
+    
+    #winms::after {
+        content: '';
+        position: absolute;
+        height: 16px;
+        width: 100%;
+        top: 50%;
+        margin-top: -8px;
+        right: 0;
+        background: rgb(1, 49, 49);
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: transform 0.4s;
+        -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    
+    #winms:hover::after {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    
+    #winms::before {
+        content: attr(data-letters);
+        position: absolute;
+        z-index: 2;
+        overflow: hidden;
+        color: rgba(255, 77, 77, 0.39);
+        white-space: nowrap;
+        width: 0%;
+        -webkit-transition: width 0.4s 0.3s;
+        transition: width 0.4s 0.3s;
+    }
+    
+    #winms:hover::before {
+        width: 100%;
+    }

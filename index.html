@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+    <script type="text/javascript" src="files/jquery-3.2.1.js"></script>
+</head>
+
+<body id="body1">
+
+    <div class="helloPg">
+        <div class="dl">
+            <p id="welcome">Welcome to Rock-Paper-Scissors Game</p>
+        </div>
+        <div id="stbdiv" class="dl">
+            <p class="startmes">Write your name in the field below and press Start</p>
+            <input type="text" id="username" placeholder="Your Name..." />
+        </div><br/>
+        <div class="dl">
+            <button class="startbutton" id="stbutton">Start</button>
+        </div>
+    </div>
+
+    <div id="gamePg">
+        <div id="gaming" class="gamediv">
+            <p id="msg">Results</p>
+            <hr width="70%" id="res">
+            <div id="result">
+                <div id="player">
+                    <div id="usname" class="usn">-</div>
+                    <div id="usResult" class="score">0</div>
+                </div>
+                <div id="pc">
+                    <div id="compName" class="usn">COMPUTER</div>
+                    <div id="compResult" class="score">0</div>
+                </div>
+            </div>
+            <div id="resultmesg">
+                <p id="winms" align="middle">Please Choose one of the options</p>
+            </div>
+            <div id="schema" class="imgs">
+                <div id="rpschoice" class="imgs" align='middle'>
+                    <input type="image" src="files/Rock-angry.png" class="rps" id="rck" />
+                    <input type="image" src="files/paper-angry.png" class="rps" id="ppr" />
+                    <input type="image" src="files/Scissors-angry.png" class="rps" id="scs" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
